@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Modern Ticket Booking Platform</title>
+    
+    <!-- Google Fonts: Poppins for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+    <!-- Header section with title and tagline -->
+    <header class="slide-up">
+        <h1>JMB Ticket Hub</h1>
+        <p>Never forget to book here</p>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="event.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+            <li><a href="About.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="Contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero section with heading and intro -->
+        <section class="hero fade-in">
+            <h2>Upcoming Events</h2>
+            <p>Discover amazing experiences waiting for you</p>
+        </section>   
+
+        <!-- Event cards section -->
+        <section class="event-cards">
+            <!-- Event 1 -->
+            <div class="event-card slide-up" style="animation-delay: 0.1s">
+                <img src="Images/services/RockFestivel.avif" alt="Rock Festival" class="event-image">
+                <div class="event-info">
+                    <h3>Rock Festival 2025</h3>
+                    <p>Experience the biggest rock festival of the year with top international bands.</p>
+                    <div class="event-price">From $49.99</div>
+                    <button class="book-btn" data-event="Rock Festival 2025">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card slide-up" style="animation-delay: 0.2s">
+                <img src="Images/services/NationalChampionship.avif" alt="Basketball Championship" class="event-image">
+                <div class="event-info">
+                    <h3>National Championship Finals</h3>
+                    <p>Witness the ultimate showdown for the national basketball title.</p>
+                    <div class="event-price">From $29.99</div>
+                    <button class="book-btn" data-event="National Championship Finals">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card slide-up" style="animation-delay: 0.3s">
+                <img src="Images/services/MusicFestival.avif" alt="Summer Music Festival" class="event-image">
+                <div class="event-info">
+                    <h3>Summer Music Festival</h3>
+                    <p>Three days of non-stop music featuring top artists from around the world.</p>
+                    <div class="event-price">From $79.99</div>
+                    <button class="book-btn" data-event="Summer Music Festival">Book Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking form section -->
+        <section id="booking">
+            <div class="booking-form slide-up" style="animation-delay: 0.4s">
+                <h2><i class="fas fa-ticket-alt"></i> Book Your Tickets</h2>
+                <form id="bookingForm">
+                    <!-- Event selection -->
+                    <div class="form-group">
+                        <label for="event"><i class="fas fa-calendar-check"></i> Select Event:</label>
+                        <select id="event" name="event" required>
+                            <option value="">-- Choose an event --</option>
+                            <option value="Rock Festival 2025">Rock Festival 2025</option>
+                            <option value="National Championship Finals">National Championship Finals</option>
+                            <option value="Summer Music Festival">Summer Music Festival</option>
+                            <option value="Hamilton: The Musical">Hamilton: The Musical</option>
+                            <option value="Jazz Night Under the Stars">Jazz Night Under the Stars</option>
+                        </select>
+                    </div>
+
+                    <!-- User's full name -->
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <!-- Email address -->
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- Ticket quantity -->
+                    <div class="form-group">
+                        <label for="tickets"><i class="fas fa-ticket-alt"></i> Number of Tickets:</label>
+                        <input type="number" id="tickets" name="tickets" min="1" max="10" required>
+                    </div>
+
+                    <!-- Preferred date -->
+                    <div class="form-group">
+                        <label for="date"><i class="fas fa-calendar-day"></i> Preferred Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <!-- Optional notes -->
+                    <div class="form-group">
+                        <label for="notes"><i class="fas fa-sticky-note"></i> Special Requests:</label>
+                        <textarea id="notes" name="notes" rows="3"></textarea>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="submit-btn"><i class="fas fa-check-circle"></i> Confirm Booking</button>
+                </form>
+
+                <!-- Placeholder for form submission message -->
+                <div id="bookingMessage"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with social links -->
+    <footer class="fade-in">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2025 JMB Ticket Hub. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="sevices.js"></script> <!-- Note: filename may be a typo -->
+</body>
+</html>
+
