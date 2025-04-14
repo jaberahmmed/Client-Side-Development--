@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMBTicketHub - Book Events Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Header-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>JMB Ticket Hub</span>
+                </a>
+            </div>
+            
+<!-- ========== Nav ========== -->
+<nav 
+      <!-- Collapsible Menu Content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Navigation Links -->
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>   
+
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+        </div>
+    </header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Your Gateway to Unforgettable Experiences</h1>
+            <p>Discover and book tickets for the hottest events in town</p>
+            <div class="hero-buttons">
+                <a href="event.html" class="btn btn-primary">Browse Events</a>
+                <a href="Services.html" class="btn btn-outline">Our Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Featured Events-->
+    <section class="featured-events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Events</h2>
+                <a href="event.html" class="view-all">View All</a>
+            </div>
+            
+            <div class="swiper featured-swiper">
+                <div class="swiper-wrapper" id="featured-events-container">
+                    <!-- Events will be loaded dynamically -->
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Upcoming Events -->
+    <section class="upcoming-events">
+        <div class="container">
+            <div class="section-header">
+                <h2>Upcoming Events</h2>
+                <div class="event-counter" id="event-counter">
+                    <span id="days">05</span>d 
+                    <span id="hours">01</span>h 
+                    <span id="minutes">01</span>m 
+                    <span id="seconds">33</span>s
+                </div>
+            </div>
+            
+            <div class="events-grid" id="upcoming-events-container">
+                <!-- Events will be loaded dynamically -->
+            </div>
+            
+            <div class="text-center">
+                <a href="upcomingevents.html" class="btn btn-outline">View More Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>JMB Ticket Hub is your one-stop destination for booking tickets to the most exciting events. We strive to provide a seamless ticketing experience.</p>
+            
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="refund.html">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 10 Rosebery Avenue, London</li>
+                        <li><i class="fas fa-phone"></i> +447377563958 </li>
+                        <li><i class="fas fa-envelope"></i> info@jmbtickethub.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; JMB Ticket Hub. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <p>We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies.</p>
+            <div class="cookie-buttons">
+                <button id="acceptCookies" class="btn btn-primary">Accept All</button>
+                <button id="rejectCookies" class="btn btn-outline">Reject Non-Essential</button>
+                <a href="index.html" class="cookie-link">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>
